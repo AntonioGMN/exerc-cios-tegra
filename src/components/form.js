@@ -20,7 +20,7 @@ export const Form = styled.form`
 	}
 
 	p,
-	a {
+	label {
 		width: 100%;
 		text-align: start;
 		color: #c0208f;
@@ -46,5 +46,4 @@ export const Button = styled.button`
 
 	padding: 16px;
 	background: #c0208f;
-	border-radius: 12px;
 `;

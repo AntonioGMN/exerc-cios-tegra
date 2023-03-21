@@ -8,6 +8,10 @@ const ChangePage = styled.button`
 	//${(props) => (props.width ? props.width : "100%")};
 	height: 80px;
 	border-radius: 15%;
+
+	:disabled {
+		cursor: not-allowed;
+	}
 `;
 
 export default ChangePage;

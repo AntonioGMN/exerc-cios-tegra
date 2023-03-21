@@ -1,10 +1,10 @@
 import { useState } from "react";
-import { Button, Form } from "../components/form";
+import { Form } from "../components/form";
 import Input from "../components/input";
 import Section from "../components/section";
 import { handlerInput } from "../utils";
 
-export default function Exercio1() {
+export default function Exercise1() {
 	const [dimensions, setDimensions] = useState({
 		width: "",
 		length: "",
@@ -48,11 +48,11 @@ export default function Exercio1() {
 				<Section>
 					<div>
 						<p>Área do terreno:</p>
-						<Button type="text">{area()}</Button>
+						<span>{area()}</span>
 					</div>
 					<div>
 						<p>Preço do terreno:</p>
-						<Button type="text">{price()}</Button>
+						<span type="text">{price()}</span>
 					</div>
 				</Section>
 			</Form>
