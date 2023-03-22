@@ -12,6 +12,10 @@ const Section = styled.section`
 		width: auto;
 	}
 
+	p {
+		text-align: center;
+	}
+
 	span {
 		display: inline-block;
 		border-radius: 12px;

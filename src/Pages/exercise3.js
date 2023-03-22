@@ -29,7 +29,7 @@ export default function Exercise3() {
 	}
 
 	return (
-		<Form>
+		<Form width="400px">
 			<label>Nome1</label>
 			<Input
 				type="text"
@@ -40,6 +40,7 @@ export default function Exercise3() {
 			<label>Idade</label>
 			<Input
 				type="number"
+				min="0"
 				name="age"
 				value={people1.age}
 				onChange={(e) => handlerInput(people1, setPeople1, e)}
@@ -54,6 +55,7 @@ export default function Exercise3() {
 			<label>Idade</label>
 			<Input
 				type="number"
+				min="0"
 				name="age"
 				value={people2.age}
 				onChange={(e) => handlerInput(people2, setPeople2, e)}

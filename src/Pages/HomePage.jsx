@@ -6,7 +6,7 @@ import H1 from "../components/title";
 
 export default function HomePage() {
 	const navigate = useNavigate();
-	const curretExercise = parseInt(useHref().at(-1));
+	const curretExercise = parseInt(useHref().split("exercise/")[1]);
 
 	return (
 		<Container>
