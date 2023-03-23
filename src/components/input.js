@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Input = styled.input`
 	all: unset;
 
-	width: 100%;
+	width: ${(pros) => (pros.width ? pros.width : "auto")};
 	height: ${(pros) => (pros.height ? pros.height : "40px")};
 	padding-left: 5px;
 	color: #000;

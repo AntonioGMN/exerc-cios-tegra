@@ -13,6 +13,12 @@ import HomePage from "./Pages/HomePage.jsx";
 import Exercise10 from "./Pages/exercise10";
 import Exercise11 from "./Pages/exercise11";
 import Exercise12 from "./Pages/exercise12";
+import Exercise13 from "./Pages/exercise13";
+import Exercise14 from "./Pages/exercise14";
+import Exercise15 from "./Pages/exercise15";
+import Exercise16 from "./Pages/exercise16";
+import Exercise17 from "./Pages/exercise17";
+import Exercise18 from "./Pages/exercise18";
 
 export default function App() {
 	return (
@@ -32,6 +38,12 @@ export default function App() {
 					<Route path="/exercise/10" element={<Exercise10 />} />
 					<Route path="/exercise/11" element={<Exercise11 />} />
 					<Route path="/exercise/12" element={<Exercise12 />} />
+					<Route path="/exercise/13" element={<Exercise13 />} />
+					<Route path="/exercise/14" element={<Exercise14 />} />
+					<Route path="/exercise/15" element={<Exercise15 />} />
+					<Route path="/exercise/16" element={<Exercise16 />} />
+					<Route path="/exercise/17" element={<Exercise17 />} />
+					<Route path="/exercise/18" element={<Exercise18 />} />
 				</Route>
 			</Routes>
 		</BrowserRouter>

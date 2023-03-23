@@ -54,7 +54,7 @@ export default function Exercise12() {
 							<p>{x1}</p>
 						</Row>
 						<Row>
-							<p>x1:</p>
+							<p>x2:</p>
 							<p>{x2}</p>
 						</Row>
 					</>

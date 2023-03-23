@@ -2,14 +2,14 @@ import styled from "styled-components";
 
 const Section = styled.section`
 	width: 100%;
-	gap: 12px;
+	gap: 15px;
 
 	display: ${(props) => (props.invisible ? "none" : "flex")};
+	flex-direction: ${(props) => (props.collun ? "column" : "row")};
 	justify-content: space-around;
 
 	div {
 		height: 100%;
-		width: auto;
 	}
 
 	p {
