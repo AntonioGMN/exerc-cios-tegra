@@ -13,9 +13,9 @@ export default function Exercise18() {
 	useEffect(() => {
 		if (temperaturaType === "") setTemperatura("");
 
-		if (temperatura.toLowerCase() === "f") {
+		if (temperaturaType.toLowerCase() === "f") {
 			setEquivalentTemperature(
-				((parseFloat(temperatura) / 5) * 9 - 32).toFixed(2)
+				(((parseFloat(temperatura) - 32) * 5) / 9).toFixed(2)
 			);
 			return;
 		}
@@ -35,7 +35,7 @@ export default function Exercise18() {
 				/>
 			</Row>
 			<Section
-				collun="true"
+				column
 				invisible={
 					!(
 						temperaturaType.toLowerCase() === "c" ||
@@ -56,7 +56,9 @@ export default function Exercise18() {
 					/>
 				</Row>
 				<TextInvisible invisible={temperatura === ""}>
-					Temperatura equivalente em Fahrenheit: {equivalentTemperature}
+					Temperatura equivalente em
+					{temperaturaType.toLowerCase() === "c" ? " Fahrenheit " : " Celsius "}
+					{equivalentTemperature}
 				</TextInvisible>
 			</Section>
 		</Form>

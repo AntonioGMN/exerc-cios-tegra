@@ -22,7 +22,6 @@ export const Form = styled.form`
 	p,
 	label {
 		width: 100%;
-		text-align: start;
 		color: #c0208f;
 		font-size: 15px;
 	}

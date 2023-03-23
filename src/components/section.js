@@ -1,19 +1,22 @@
 import styled from "styled-components";
 
 const Section = styled.section`
+	max-height: 400px;
 	width: 100%;
 	gap: 15px;
 
 	display: ${(props) => (props.invisible ? "none" : "flex")};
-	flex-direction: ${(props) => (props.collun ? "column" : "row")};
+	flex-direction: ${(props) => (props.column ? "column" : "row")};
 	justify-content: space-around;
+
+	overflow-y: auto;
 
 	div {
 		height: 100%;
 	}
 
 	p {
-		text-align: center;
+		text-align: ${(props) => (props.start ? "start" : "center")};
 	}
 
 	span {
