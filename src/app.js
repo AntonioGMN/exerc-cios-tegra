@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import HomePage from "./Pages/HomePage.jsx";
+import HomePage from "./Pages/HomePage";
+
 import Exercise1 from "./Pages/exercise1";
 import Exercise2 from "./Pages/exercise2";
 import Exercise3 from "./Pages/exercise3";
@@ -24,6 +25,12 @@ import Exercise21 from "./Pages/exercise21";
 import Exercise22 from "./Pages/exercise22.js";
 import Exercise23 from "./Pages/exercise23.js";
 import Exercise24 from "./Pages/exercise24.js";
+import Exercise25 from "./Pages/exercise25.js";
+import Exercise26 from "./Pages/exercise26.js";
+import Exercise27 from "./Pages/exercise27.js";
+import Exercise28 from "./Pages/exercise28.js";
+import Exercise29 from "./Pages/exercise29.js";
+import Exercise30 from "./Pages/exercise30";
 
 export default function App() {
 	return (
@@ -55,6 +62,12 @@ export default function App() {
 					<Route path="/exercise/22" element={<Exercise22 />} />
 					<Route path="/exercise/23" element={<Exercise23 />} />
 					<Route path="/exercise/24" element={<Exercise24 />} />
+					<Route path="/exercise/25" element={<Exercise25 />} />
+					<Route path="/exercise/26" element={<Exercise26 />} />
+					<Route path="/exercise/27" element={<Exercise27 />} />
+					<Route path="/exercise/28" element={<Exercise28 />} />
+					<Route path="/exercise/29" element={<Exercise29 />} />
+					<Route path="/exercise/30" element={<Exercise30 />} />
 				</Route>
 			</Routes>
 		</BrowserRouter>
